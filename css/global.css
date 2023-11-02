@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #0d0d0d;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+

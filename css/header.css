@@ -1,0 +1,14 @@
+.header-bg {
+  background-color: #0b478d;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+}
