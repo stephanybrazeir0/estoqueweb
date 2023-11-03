@@ -1,3 +1,12 @@
+.conteudo-inicial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .barra-de-pesquisa {
   display: flex;
   align-items: center;
@@ -19,7 +28,7 @@
 }
 
 .barra-de-pesquisa a {
-  padding: 8px 16px;
+  padding: 9px 16px;
   background-color: #0b478d;
   border-radius: 0 5px 5px 0;
 }
@@ -32,6 +41,7 @@
   border-radius: 5px;
   border: 1px solid #0b478d;
   font: 700 1.25rem/1.3 "Lato", sans-serif;
+  cursor: pointer;
   transition: 0.3;
 }
 
@@ -41,8 +51,36 @@
   border: initial;
 }
 
-.conteudo-inicial {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media (max-width: 800px) {
+  .barra-de-pesquisa input {
+    font-size: 1rem;
+    font-weight: 1.25;
+    padding: 12px 12px;
+    width: 100%;
+  }
+  .barra-de-pesquisa a {
+    padding: 9px 12px;
+  }
+
+  .novo-produto button {
+    padding: 12px 24x;
+    font-size: 1rem;
+    font-weight: 1.25;
+  }
+}
+
+@media (max-width: 560px) {
+  .conteudo-inicial {
+    gap: 20px 40px;
+  }
+  .barra-de-pesquisa {
+    order: 2;
+  }
+  .barra-de-pesquisa input {
+    font-size: 0.8rem;
+    font-weight: 1;
+  }
+  .barra-de-pesquisa a {
+    padding: 8px 10px;
+  }
 }

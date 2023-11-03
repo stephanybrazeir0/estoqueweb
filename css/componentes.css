@@ -7,3 +7,26 @@
   margin-right: auto;
 }
 
+.botao {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font: 700 1.25rem/1.2 "Lato", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .botao {
+    font-size: 1rem;
+    font-weight: 1;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .botao {
+    font-size: 0.8rem;
+    font-weight: 0.9;
+    padding: 4px 8px;
+  }
+}

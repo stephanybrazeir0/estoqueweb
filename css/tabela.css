@@ -1,0 +1,85 @@
+.tabela-container {
+  display: grid;
+  grid-template-columns: auto;
+  border-radius: 8px;
+  border: 1px solid #b0b0b0;
+  text-align: left;
+}
+
+table,
+td,
+tr,
+th {
+  padding: 12px 24px 0px 24px;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border-right: 1px solid #b0b0b0;
+}
+
+td:last-child,
+th:last-child {
+  border-right: none;
+}
+
+.tabela thead th {
+  font: 700 1.5rem/1.25 "Lato", sans-serif;
+  color: #0b478d;
+  padding-bottom: 12px;
+}
+
+.tabela tbody td {
+  font: 400 1rem/1.25 "Inter", sans-serif;
+  padding-bottom: 12px;
+}
+
+.tabela tbody tr:nth-child(odd) {
+  background-color: #ededed;
+}
+
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.teste {
+  overflow-x: auto;
+}
+
+@media (max-width: 800px) {
+  table,
+  td,
+  tr,
+  th {
+    padding: 6px 12px 0px 12px;
+  }
+  .tabela thead th {
+    font-size: 1.2rem;
+    font-weight: 1.15;
+    padding-bottom: 6px;
+  }
+  .tabela tbody td {
+    padding-bottom: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  table,
+  td,
+  tr,
+  th {
+    padding: 3px 6px 0px 3px;
+  }
+  .tabela thead th {
+    font-size: 0.8rem;
+    font-weight: 0.9;
+    padding-bottom: 6px;
+  }
+  .tabela tbody td {
+    font-size: 0.8rem;
+    font-weight: 0.9;
+  }
+}

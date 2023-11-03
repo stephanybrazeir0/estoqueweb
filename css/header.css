@@ -12,3 +12,9 @@
   padding-bottom: 20px;
   margin-bottom: 60px;
 }
+
+@media(max-width: 600px){
+  .header{
+    margin-bottom: 40px;
+  }
+}

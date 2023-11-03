@@ -1,0 +1,69 @@
+.modal-container {
+  display: none;
+}
+
+.modal {
+  padding: 32px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 32px;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.form h1 {
+  font: 700 1.5rem/1.25 "Lato", sans-serif;
+  color: #0b478d;
+  margin-bottom: 16px;
+}
+
+.form label {
+  font: 400 1.25rem/1.2 "Inter", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form select {
+  width: 100%;
+  padding: 12px;
+  font: 400 1rem/1.2 "Inter", sans-serif;
+  color: #4e4e4e;
+  background-color: #ededed;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="number"]:focus,
+.form select:focus {
+  outline: none;
+  border: 1px solid #0b478d;
+  background-color: initial;
+}
+
+.form span {
+  color: #cf2020;
+}
+
+.salvar {
+  color: #123000;
+  background-color: #58e327;
+}
+
+.secundario {
+  color: #ffffff;
+  background-color: #4e4e4e;
+}
+
+.excluir {
+  color: #ffffff;
+  background-color: #cf2020;
+}
+

@@ -35,8 +35,105 @@
       </div>
     </div>
 
+    <div class="tabela-container">
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Valor Venda</th>
+            <th>Quantidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <div class="teste">
+          <tbody>
+            <tr>
+              <td>000001</td>
+              <td>Camiseta DACOMP</td>
+              <td>R$50,00</td>
+              <td>20</td>
+              <td class="acoes">
+                <button class="botao excluir">Excluir</button>
+                <button class="botao secundario">Editar</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>000002</td>
+              <td>Calça skinny feminina 38</td>
+              <td>R$169,90</td>
+              <td>2</td>
+              <td class="acoes">
+                <button class="botao excluir">Excluir</button>
+                <button class="botao secundario">Editar</button>
+              </td>
+            </tr>
+          </tbody>
+        </div>
+      </table>
+    </div>
+
   </main>
 
+  <div class="modal-container container" id="modal-container">
+    <div class="modal">
+      <form action="./" class="form">
+        <h1 class="col-2">Novo produto</h1>
+        <div>
+          <label for="codigo">Código</label>
+          <input type="text" id="codigo">
+        </div>
+
+        <div>
+          <label for="barras">Código de barras</label>
+          <input type="text" id="barras">
+        </div>
+
+        <div class="col-2">
+          <label for="descricao">Descrição<span>*</span></label>
+          <input type="text" id="descricao" required>
+        </div>
+
+        <div>
+          <label for="quantidade">Quantidade<span>*</span></label>
+          <input type="number" id="quantidade" required>
+        </div>
+
+        <div>
+          <label for="peso">Peso(kg)</label>
+          <input type="number" id="peso">
+        </div>
+
+        <div class="col-2">
+          <label for="tipo">Tipo de produto<span>*</span></label>
+          <select name="tipo" id="tipo" required>
+            <option value="diversos">Diversos</option>
+            <option value="materia-prima">Matéria prima</option>
+            <option value="uso-consumo">Material de uso e consumo</option>
+            <option value="revenda">Produto para revenda</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="compra">Valor compra</label>
+          <input type="text" id="compra">
+        </div>
+
+        <div>
+          <label for="venda">Valor venda</label>
+          <input type="text" id="venda">
+        </div>
+
+        <div>
+          <button class="botao salvar">Salvar</button>
+          <button class="botao secundario">Cancelar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
