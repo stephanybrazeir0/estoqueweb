@@ -102,12 +102,12 @@
   }
   .form h1 {
     font-size: 1.2rem;
-    font-weight: 1.15;
+    line-height: 1.15;
   }
   .form label,
   .form select {
     font-size: 1rem;
-    font-weight: 1.2;
+    line-height: 1.2;
   }
 }
 

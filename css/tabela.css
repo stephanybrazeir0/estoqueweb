@@ -58,7 +58,7 @@ th:last-child {
   }
   .tabela thead th {
     font-size: 1.2rem;
-    font-weight: 1.15;
+    line-height: 1.15;
     padding-bottom: 6px;
   }
   .tabela tbody td {
@@ -75,11 +75,11 @@ th:last-child {
   }
   .tabela thead th {
     font-size: 0.8rem;
-    font-weight: 0.9;
+    line-height: 0.9;
     padding-bottom: 6px;
   }
   .tabela tbody td {
     font-size: 0.8rem;
-    font-weight: 0.9;
+    line-height: 0.9;
   }
 }

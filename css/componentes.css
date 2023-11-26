@@ -18,7 +18,7 @@
 @media (max-width: 800px) {
   .botao {
     font-size: 1rem;
-    font-weight: 1;
+    line-height: 1;
     padding: 6px 12px;
   }
 }
@@ -26,7 +26,7 @@
 @media (max-width: 600px) {
   .botao {
     font-size: 0.8rem;
-    font-weight: 0.9;
+    line-height: 0.9;
     padding: 4px 8px;
   }
 }

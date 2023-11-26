@@ -54,7 +54,7 @@
 @media (max-width: 800px) {
   .barra-de-pesquisa input {
     font-size: 1rem;
-    font-weight: 1.25;
+    line-height: 1.25;
     padding: 12px 12px;
     width: 100%;
   }
@@ -65,7 +65,7 @@
   .novo-produto button {
     padding: 12px 24x;
     font-size: 1rem;
-    font-weight: 1.25;
+    line-height: 1.25;
   }
 }
 
@@ -78,7 +78,7 @@
   }
   .barra-de-pesquisa input {
     font-size: 0.8rem;
-    font-weight: 1;
+    line-height: 1;
   }
   .barra-de-pesquisa a {
     padding: 8px 10px;
