@@ -46,28 +46,8 @@
             <th>Ações</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>000001</td>
-            <td>Camiseta DACOMP</td>
-            <td>R$50,00</td>
-            <td>20</td>
-            <td class="acoes">
-              <button class="botao excluir">Excluir</button>
-              <button class="botao secundario">Editar</button>
-            </td>
-          </tr>
-
-          <tr>
-            <td>000002</td>
-            <td>Calça skinny feminina 38</td>
-            <td>R$169,90</td>
-            <td>2</td>
-            <td class="acoes">
-              <button class="botao excluir">Excluir</button>
-              <button class="botao secundario">Editar</button>
-            </td>
-          </tr>
+        <tbody id="bodyTabela">
+          
         </tbody>
       </table>
     </div>
@@ -76,56 +56,27 @@
 
   <div id="fade" class="hide"></div>
   <div class="modal-bg hide" id="modal-bg">
-    <form action="./" class="form" method="POST">
+    <form id="formCadastro" action="http://localhost:8080/cadastrarProduto" class="form" method="POST">
       <h1 class="col-2">Novo produto</h1>
-      <div>
-        <label for="codigo">Código</label>
-        <input type="text" id="codigo">
-      </div>
-
-      <div>
-        <label for="barras">Código de barras</label>
-        <input type="text" id="barras">
-      </div>
 
       <div class="col-2">
         <label for="descricao">Descrição<span>*</span></label>
-        <input type="text" id="descricao" required>
+        <input type="text" id="descricao" name="descricao" required>
       </div>
 
       <div>
-        <label for="quantidade">Quantidade<span>*</span></label>
-        <input type="number" id="quantidade" required>
+        <label for="valor">Valor venda<span>*</span></label>
+        <input type="number" id="valor" name="valor">
       </div>
 
       <div>
-        <label for="peso">Peso(kg)</label>
-        <input type="number" id="peso">
-      </div>
-
-      <div class="col-2">
-        <label for="tipo">Tipo de produto<span>*</span></label>
-        <select name="tipo" id="tipo" required>
-          <option value="diversos">Diversos</option>
-          <option value="materia-prima">Matéria prima</option>
-          <option value="uso-consumo">Material de uso e consumo</option>
-          <option value="revenda">Produto para revenda</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="compra">Valor compra</label>
-        <input type="text" id="compra">
-      </div>
-
-      <div>
-        <label for="venda">Valor venda</label>
-        <input type="text" id="venda">
+        <label for="qtd">Quantidade<span>*</span></label>
+        <input type="number" id="qtd" name="qtd" required>
       </div>
 
       <div class="acoes">
-        <button class="botao salvar" id="save-product">Salvar</button>
-        <button class="botao secundario" id="close-modal">Cancelar</button>
+        <button class="botao salvar" id="save-product" type="submit">Salvar</button>
+        <button class="botao secundario" id="close-modal" type="reset">Cancelar</button>
       </div>
     </form>
   </div>
